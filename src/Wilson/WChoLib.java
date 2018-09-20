@@ -23,5 +23,9 @@ public class WChoLib {
         return date;
     }
 
+    public static boolean isFibonnaci(int num)
+    {
+        
+    }
 }
 
