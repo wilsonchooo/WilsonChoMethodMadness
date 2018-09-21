@@ -23,9 +23,59 @@ public class WChoLib {
         return date;
     }
 
-    public static boolean isFibonnaci(int num)
+    public static int sumUpTo(int num)
     {
-        
+        int storer = 0;
+        for (int x=0; x<=num; x++)
+        {
+            storer += x;
+        }
+        return storer;
     }
+
+/*
+   public static String primePrinter(int num)
+    {
+        String holder = "";
+        for (int x = 0; x < num; x++) {
+            if (x % 2 != 0 && x % 3 != 0) {
+                holder += ", " + x;
+            }
+        }
+        return holder.substring(2);
+    }
+*/
+
+    public static String primePrinter(int num)
+    {
+        String holder = "";
+        for (int x = 0; x < num; x++) {
+            if (Integer.MAX_VALUE % 2 != 0 && Integer.MAX_VALUE % 3 != 0) {
+                holder += ", " + x;
+            }
+        }
+        return holder.substring(2);
+    }
+
+    public static String quadSolver(Double a, Double b, Double c)
+    {
+        double x = (b*b) - (4 * a * c);
+        if (x>0)
+        {
+            Double root = (-b + Math.sqrt(b*b - 4*a*c ))/(2*a);
+            Double root2 = (b + Math.sqrt(b*b - 4*a*c ))/(2*a);
+
+
+            return Double.toString(root) +", " + Double.toString(root2);
+        }
+        else if (x<0)
+        {
+            return "roots are imaginary";
+        }
+
+        return "LMAO DUMB BITCH";
+    }
+
+
 }
 
